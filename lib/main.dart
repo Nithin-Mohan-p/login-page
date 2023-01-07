@@ -7,7 +7,7 @@ import 'package:luminar/home.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.yellow),
+    theme: ThemeData(primarySwatch: Colors.blue),
     debugShowCheckedModeBanner: false,
     home: const Splashscreen(),
   ));
@@ -23,6 +23,7 @@ class Splashscreen extends StatefulWidget {
 class _SplashscreenState extends State<Splashscreen> {
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 5), () {
@@ -59,7 +60,9 @@ class _SplashscreenState extends State<Splashscreen> {
               ),
               Text(
                 "My Pet App",
-                style: TextStyle(fontSize: 22, color: Colors.amber),
+                style: TextStyle(
+                  fontSize: 22,
+                ),
               ),
             ],
           ),
